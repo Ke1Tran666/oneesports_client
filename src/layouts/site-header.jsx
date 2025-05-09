@@ -1,11 +1,12 @@
 import React from 'react'
+import { Globe, ChevronDown } from 'lucide-react'
 
 const SiteHeader = () => {
     return (
         <>
-            <header className="border-b border-gray-800 bg-dark w-[1520px] max-w-full">
+            <header className="text-white bg-dark w-[1520px] max-w-full">
                 <div className="container mx-auto px-4 w-[1350px] max-w-full">
-                    <div className="flex items-center justify-between h-16">
+                    <div className="flex items-center justify-between h-[50px]">
                         <div className="flex items-center space-x-6">
                             <a href="/" className="flex items-center">
                                 <img
@@ -15,30 +16,30 @@ const SiteHeader = () => {
                                 />
                             </a>
                             <nav className="hidden md:flex items-center space-x-6">
-                                <a href="#" className="text-sm font-medium hover:text-red-500">
+                                <a href="#" className="text-sm font-bold hover:text-red-500">
                                     LMHT
                                 </a>
-                                <a href="#" className="text-sm font-medium hover:text-red-500">
+                                <a href="#" className="text-sm font-bold hover:text-red-500">
                                     LIÊN QUÂN MOBILE
                                 </a>
-                                <a href="#" className="text-sm font-medium hover:text-red-500">
+                                <a href="#" className="text-sm font-bold hover:text-red-500">
                                     DTCL
                                 </a>
-                                <a href="#" className="text-sm font-medium hover:text-red-500">
+                                <a href="#" className="text-sm font-bold hover:text-red-500">
                                     VALORANT
                                 </a>
-                                <a href="#" className="text-sm font-medium hover:text-red-500">
+                                <a href="#" className="text-sm font-bold hover:text-red-500">
                                     PUBG
                                 </a>
-                                <a href="#" className="text-sm font-medium hover:text-red-500">
+                                <a href="#" className="text-sm font-bold hover:text-red-500">
                                     THẾ GIỚI GAME
                                 </a>
-                                <a href="#" className="text-sm font-medium hover:text-red-500">
+                                <a href="#" className="text-sm font-bold hover:text-red-500">
                                     EA SPORTS FC
                                 </a>
                                 <div className="relative group">
                                     <button className="flex items-center text-sm font-medium hover:text-red-500">
-                                        KHÁC <span className="ml-1">▼</span>
+                                        KHÁC <ChevronDown className="h-4 w-4" />
                                     </button>
                                     <div className="absolute hidden group-hover:block bg-dark border border-gray-800 w-40 z-10">
                                         <div className="py-2">
@@ -60,9 +61,10 @@ const SiteHeader = () => {
                             <a href="#" className="text-sm font-medium hover:text-red-500 hidden md:block">
                                 SHOP
                             </a>
-                            <div className="flex items-center border-l border-r border-gray-800 px-4">
+                            <div className="flex items-center border-l border-r border-white px-4">
+                                <Globe className="h-4 w-4 mr-1" />
                                 <span className="text-sm font-medium mr-1">VN</span>
-                                <span>▼</span>
+                                <ChevronDown className="h-4 w-4" />
                             </div>
                             <button className="bg-yellow-500 hover:bg-yellow-600 text-black text-xs font-bold px-4 py-2 rounded">
                                 ĐĂNG NHẬP

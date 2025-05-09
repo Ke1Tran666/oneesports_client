@@ -1,36 +1,18 @@
-import { SiteHeader } from '../layouts/import-layout.jsx'
+import { SiteHeader, SiteNavigation } from '../layouts/import-layout.jsx'
 
 const Pages = () => {
     return (
-        <main className="min-h-screen bg-dark text-white w-auto max-w-full">
-            {/* Top Navigation */}
-            <SiteHeader />
+        <main className="min-h-screen bg-white w-auto max-w-full">
+            <div className='fixed top-0 left-0 right-0 z-50 bg-white custom-shadow'>
+                {/* Top Navigation */}
+                <SiteHeader />
 
-            {/* Secondary Navigation */}
-            <div className=" border-b bg-white text-black border-gray-800">
-                <div className="container mx-auto px-4 w-[1140px] max-w-full">
-                    <div className="flex items-center space-x-6 overflow-x-auto py-2 scrollbar-hide">
-                        <a href="#" className="text-xs font-medium hover:text-red-500 whitespace-nowrap flex items-center">
-                            <span className="text-yellow-500 mr-1">⚡</span> FAKER
-                        </a>
-                        <a href="#" className="text-xs font-medium hover:text-red-500 whitespace-nowrap">
-                            CẨM NANG DTCL
-                        </a>
-                        <a href="#" className="text-xs font-medium hover:text-red-500 whitespace-nowrap">
-                            LCK
-                        </a>
-                        <a href="#" className="text-xs font-medium hover:text-red-500 whitespace-nowrap">
-                            ANIME
-                        </a>
-                        <a href="#" className="text-xs font-medium hover:text-red-500 whitespace-nowrap">
-                            LPL
-                        </a>
-                    </div>
-                </div>
+                {/* Secondary Navigation */}
+                <SiteNavigation />
             </div>
 
             {/* Main Content */}
-            <div className="container mx-auto px-4 py-8">
+            <div className="container mx-auto px-4 py-8 mt-20">
                 {/* Featured Article */}
                 <div className="mb-12">
                     <div className="relative">

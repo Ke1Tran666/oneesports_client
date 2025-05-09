@@ -3,6 +3,8 @@
 :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    --color4: #ffc600;
+    --tw-shadow: 0 .5rem 1rem rgb(0 0 0 / .15) !important;
 }
 
 body {
@@ -24,4 +26,32 @@ body {
 .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+/* SiteNavigation */
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item:not(:first-child)::before {
+    content: "•";
+    color: #facc15;
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Custom shadow class */
+.custom-shadow {
+    --tw-shadow: 0 .5rem 1rem rgb(0 0 0 / 0.15) !important;
+    --tw-shadow-colored: 0 .5rem 1rem var(--tw-shadow-color) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
