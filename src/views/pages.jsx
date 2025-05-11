@@ -1,16 +1,7 @@
-import { SiteHeader, SiteNavigation } from '../layouts/import-layout.jsx'
-
 const Pages = () => {
+
     return (
         <main className="min-h-screen bg-white w-auto max-w-full">
-            <div className='fixed top-0 left-0 right-0 z-50 bg-white custom-shadow'>
-                {/* Top Navigation */}
-                <SiteHeader />
-
-                {/* Secondary Navigation */}
-                <SiteNavigation />
-            </div>
-
             {/* Main Content */}
             <div className="container mx-auto px-4 py-8 mt-20">
                 {/* Featured Article */}
@@ -25,9 +16,9 @@ const Pages = () => {
                             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
                                 <div className="flex items-center mb-2">
                                     <span className="bg-yellow-500 text-black text-xs font-bold px-2 py-1 mr-2">VALORANT</span>
-                                    <span className="text-xs text-gray-300">THÁNG NĂM 2, 2023 07:08</span>
+                                    <span className="text-xs text-gray-500">THÁNG NĂM 2, 2023 07:08</span>
                                 </div>
-                                <h2 className="text-2xl font-bold">
+                                <h2 className="text-2xl font-bold text-white mb-2">
                                     Valorant chuẩn bị chào đón nhiều thay đổi quan trọng: Tejo bị nerf, hệ thống replay ra mắt
                                 </h2>
                             </div>
@@ -50,10 +41,10 @@ const Pages = () => {
                             <div className="md:w-2/3">
                                 <div className="flex items-center mb-2">
                                     <span className="bg-blue-600 text-white text-xs font-bold px-2 py-1 mr-2">ANIME/MANGA</span>
-                                    <span className="text-xs text-gray-300">THÁNG NĂM 1, 2023 19:56</span>
+                                    <span className="text-xs text-gray-500">THÁNG NĂM 1, 2023 19:56</span>
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">One Piece: Năng lực trái ác quỷ của Imu</h3>
-                                <p className="text-gray-300">One Piece đã có những hé lộ đầu tiên về trái ác quỷ của Imu.</p>
+                                <p className="text-gray-500">One Piece đã có những hé lộ đầu tiên về trái ác quỷ của Imu.</p>
                             </div>
                         </article>
 
@@ -68,10 +59,10 @@ const Pages = () => {
                             <div className="md:w-2/3">
                                 <div className="flex items-center mb-2">
                                     <span className="bg-blue-600 text-white text-xs font-bold px-2 py-1 mr-2">ANIME/MANGA</span>
-                                    <span className="text-xs text-gray-300">THÁNG NĂM 1, 2023 09:15</span>
+                                    <span className="text-xs text-gray-500">THÁNG NĂM 1, 2023 09:15</span>
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">Tin tức anime mới nhất</h3>
-                                <p className="text-gray-300">Cập nhật những tin tức mới nhất về thế giới anime và manga.</p>
+                                <p className="text-gray-500">Cập nhật những tin tức mới nhất về thế giới anime và manga.</p>
                             </div>
                         </article>
                     </div>

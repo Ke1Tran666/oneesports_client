@@ -1,10 +1,16 @@
-import Home from "./views/pages";
+import { Route, Routes } from "react-router-dom";
+import Pages from "./views/pages";
+import Client from "./views/Client";
 
 const App = () => {
 
   return (
     <>
-      <Home />
+      <Routes>
+        <Route path="/" element={<Client />}>
+          <Route index element={<Pages />} />
+        </Route>
+      </Routes>
     </>
   )
 };
