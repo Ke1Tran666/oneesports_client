@@ -1,7 +1,7 @@
 const Pages = () => {
 
     return (
-        <main className="min-h-screen bg-white w-auto max-w-full">
+        <main className="min-h-screen bg-white max-w-full w-[1350px] mx-auto">
             {/* Main Content */}
             <div className="container mx-auto px-4 py-8 mt-20">
                 {/* Featured Article */}
