@@ -8,6 +8,8 @@
 - lucide-react (icon)
 - Tailwindcss (css)
 - React-router-dom (page navigation)
+- Axios
+- React-validation
 
 # project launch
 
