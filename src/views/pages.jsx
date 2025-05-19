@@ -145,7 +145,7 @@ const Pages = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* Left Column - News Articles */}
                     <div className="lg:col-span-2 space-y-8">
-                        {newsArticles.map((article, index) => (
+                        {newsArticles.map((article) => (
                             <article
                                 key={article.id}
                                 className="flex flex-col md:flex-row gap-4 hover:bg-gray-50 p-2 rounded-lg transition-colors cursor-pointer"
@@ -178,7 +178,7 @@ const Pages = () => {
                             <h2 className="text-xl font-bold border-b border-gray-300 pb-2 mb-4">TIN NỔI BẬT</h2>
 
                             <div className="space-y-6">
-                                {featuredNews.map((news, index) => (
+                                {featuredNews.map((news) => (
                                     <article
                                         key={news.id}
                                         className="flex gap-4 hover:bg-white p-2 rounded transition-colors cursor-pointer"
